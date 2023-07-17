@@ -39,16 +39,18 @@
     <main class="login--contain">
         <section class="login">
             <h1 class="login__title">Iniciar Sesión</h1>
-            <form action="">
+            <form id="form-login">
                 <div class="login__input-contain">
-                    <input class="login__input" type="email" name="email" placeholder="Escriba su correo electrónico" id="input" data-tipo="email" required>
+                    <input class="login__input" type="email" name="email" placeholder="Escriba su correo electrónico" id="inpuLogin" data-tipo="email" required value="test@test.com">
                     <label class="login__label" for="email">Escriba su correo electrónico</label>
+                    <span class="input-message-error"></span>
                 </div>
                 <div class="login__input-contain">
-                    <input class="login__input" type="password" name="password" placeholder="Escriba su contraseña" id="input" data-tipo="password" required>
+                    <input class="login__input" type="password" name="password" placeholder="Escriba su contraseña" id="inputLogin" data-tipo="password" required value="123456">
                     <label class="login__label" for="password">Escriba su contraseña</label>
+                    <span class="input-message-error"></span>
                 </div>
-                <a class="login__button" href="./products.html">Entrar</a>
+                <button class="login__button">Entrar</button>
             </form>
         </section>
     </main>
@@ -67,14 +69,16 @@
             </div>
             <div class="footer__contact">
                 <h3 class="contact__title">Hable con nosotros</h3>
-                <form action="">
+                <form id="form-contact">
                     <div class="contact__input-contain">
-                        <input class="contact__input" type="text" name="nombre" placeholder="Nombre" id="input" data-tipo="nombre" required maxlength="50">
+                        <input class="contact__input" type="text" name="nombre" placeholder="Nombre" data-tipo="nombre" required maxlength="40">
                         <label class="contact__label" for="nombre">Nombre</label>
+                        <span class="input-message-error"></span>
                     </div>
                     <div class="contact__input-contain">
-                        <textarea class="contact__input textarea" rows="4" cols="40" name="mensaje" placeholder="Mensaje" id="input" data-tipo="mensaje" required maxlength="300"></textarea>
+                        <textarea class="contact__input textarea" rows="4" cols="40" name="mensaje" placeholder="Mensaje" data-tipo="mensaje" required maxlength="120"></textarea>
                         <label class="contact__label" for="mesaje">Mensaje</label>
+                        <span class="input-message-error"></span>
                     </div>
                     <button class="contact__button">Enviar mensaje</button>
                 </form>
@@ -87,6 +91,8 @@
         </div>
     </footer>
 
+    <script type="module" src="./assets/js/validacion-form-contact.js"></script>
+    <script type="module" src="./assets/js/validacion-form-login.js"></script>
 </body>
 
 </html>

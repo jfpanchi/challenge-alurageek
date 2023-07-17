@@ -1,6 +1,6 @@
-const inputs = document.querySelectorAll("#input");
+const inputs = document.querySelectorAll(".contact__input");
 const form = document.getElementById("form-contact");
-const button_send = document.getElementById('btn-send')
+const button_send = document.getElementById('contact__button');
 
 inputs.forEach((input) => {
     input.addEventListener("blur", (input) => {
@@ -55,19 +55,11 @@ const tipoDeErrores = [
 const mensajesDeError = {
     nombre: {
       valueMissing: "El campo nombre no puede estar vacío",
-      patternMismatch: "El nombre debe contener maximo 50 caracteres.",
-    },
-    email: {
-      valueMissing: "El campo correo no puede estar vacío",
-      typeMismatch: "El correo no es válido",
-    },
-    asunto: {
-        valueMissing: "El campo asunto no puede estar vacío",
-        patternMismatch: "El asunto debe contener maximo 50 caracteres.",
+      patternMismatch: "El nombre debe contener maximo 40 caracteres.",
     },
     mensaje: {
         valueMissing: "El campo mensaje no puede estar vacío",
-        patternMismatch: "El mensaje debe contener maximo 300 caracteres.",
+        patternMismatch: "El mensaje debe contener maximo 120 caracteres.",
     },
 }
 

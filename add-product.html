@@ -42,26 +42,38 @@
     <main class="add-product--contain">
         <section class="add-product">
             <h1 class="add-product__title">Agregar nuevo producto</h1>
-            <form action="">
-                <div class="add-product__input-contain--image">
-                    <input  class="add-product__input" type="file" name="imagen" placeholder="Imagen" id="input" data-tipo="image-product" required>
+            <form id="form-add_product">
+                <!-- <div class="add-product__input-contain--image">
+                    <input  class="add-product__input" type="file" name="imagen" placeholder="Imagen" data-tipo="image-product" required>
                     <label class="add-product__label--image" for="imagen">Arrastre para agregar una imagen</label>
+                </div> -->
+                <div class="add-product__input-contain">
+                    <input class="add-product__input" type="text" name="image" placeholder="URL" data-tipo="imageProduct" required>
+                    <label class="add-product__label" for="image">URL Imagen</label>
+                    <span class="input-message-error"></span>
                 </div>
                 <div class="add-product__input-contain">
-                    <input class="add-product__input" type="text" name="category" placeholder="Categoria" id="input" data-tipo="name-product" required>
-                    <label class="add-product__label" for="category">Categoria</label>
+                    <select class="add-product__input" name="category"  data-tipo="categoryProduct" required >
+                        <option value="star-wars" selected>Star Wars</option>
+                        <option value="consolas">Consolas</option>
+                        <option value="diversos">Diversos</option>
+                    </select>
+                    <span class="input-message-error"></span>
                 </div>
                 <div class="add-product__input-contain">
-                    <input class="add-product__input" type="text" name="name" placeholder="Nombre" id="input" data-tipo="category-product" required>
+                    <input class="add-product__input" type="text" name="name" placeholder="Nombre" data-tipo="nameProduct" required >
                     <label class="add-product__label" for="name">Nombre del producto</label>
+                    <span class="input-message-error"></span>
                 </div>
                 <div class="add-product__input-contain">
-                    <input class="add-product__input" type="text" name="price" placeholder="Precio" id="input" data-tipo="price-product" required>
+                    <input class="add-product__input" type="number" name="price" placeholder="Precio" data-tipo="priceProduct" required min="0" step="0.01">
                     <label class="add-product__label" for="price">Precio del producto</label>
+                    <span class="input-message-error"></span>
                 </div>
                 <div class="add-product__input-contain">
-                    <input class="add-product__input" type="text" name="description" placeholder="Descripcion" id="input" data-tipo="description-prduct" required>
+                    <input class="add-product__input" type="text" name="description" placeholder="Descripcion" data-tipo="descriptionPrduct" required>
                     <label class="add-product__label" for="description">Descripción del producto</label>
+                    <span class="input-message-error"></span>
                 </div>
                 <button class="add-product__button">Agregar Producto</button>
             </form>
@@ -83,14 +95,16 @@
             </div>
             <div class="footer__contact">
                 <h3 class="contact__title">Hable con nosotros</h3>
-                <form action="">
+                <form id="form-contact">
                     <div class="contact__input-contain">
-                        <input class="contact__input" type="text" name="nombre" placeholder="Nombre" id="input" data-tipo="nombre" required maxlength="50">
+                        <input class="contact__input" type="text" name="nombre" placeholder="Nombre" data-tipo="nombre" required maxlength="40">
                         <label class="contact__label" for="nombre">Nombre</label>
+                        <span class="input-message-error"></span>
                     </div>
                     <div class="contact__input-contain">
-                        <textarea class="contact__input textarea" rows="4" cols="40" name="mensaje" placeholder="Mensaje" id="input" data-tipo="mensaje" required maxlength="300"></textarea>
+                        <textarea class="contact__input textarea" rows="4" cols="40" name="mensaje" placeholder="Mensaje" data-tipo="mensaje" required maxlength="120"></textarea>
                         <label class="contact__label" for="mesaje">Mensaje</label>
+                        <span class="input-message-error"></span>
                     </div>
                     <button class="contact__button">Enviar mensaje</button>
                 </form>
@@ -103,6 +117,8 @@
         </div>
     </footer>
 
+    <script type="module" src="./assets/js/validacion-form-contact.js"></script>
+    <script type="module" src="./assets/js/validacion-form-add_producto.js"></script>
 </body>
 
 </html>

@@ -225,14 +225,16 @@
             </div>
             <div class="footer__contact">
                 <h3 class="contact__title">Hable con nosotros</h3>
-                <form action="">
+                <form id="form-contact">
                     <div class="contact__input-contain">
-                        <input class="contact__input" type="text" name="nombre" placeholder="Nombre" id="input" data-tipo="nombre" required maxlength="50">
+                        <input class="contact__input" type="text" name="nombre" placeholder="Nombre" data-tipo="nombre" required maxlength="40">
                         <label class="contact__label" for="nombre">Nombre</label>
+                        <span class="input-message-error"></span>
                     </div>
                     <div class="contact__input-contain">
-                        <textarea class="contact__input textarea" rows="4" cols="40" name="mensaje" placeholder="Mensaje" id="input" data-tipo="mensaje" required maxlength="300"></textarea>
+                        <textarea class="contact__input textarea" rows="4" cols="40" name="mensaje" placeholder="Mensaje" data-tipo="mensaje" required maxlength="120"></textarea>
                         <label class="contact__label" for="mesaje">Mensaje</label>
+                        <span class="input-message-error"></span>
                     </div>
                     <button class="contact__button">Enviar mensaje</button>
                 </form>
@@ -245,6 +247,7 @@
         </div>
     </footer>
 
+    <script src="./assets/js/validacion-form-contact.js"></script>
 </body>
 
 </html>
