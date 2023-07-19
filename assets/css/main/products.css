@@ -61,6 +61,23 @@ main {
   font-weight: 700;
 }
 
+.btn-delete {
+  width: fit-content;
+  font-weight: 700;
+  padding: 0.2rem;
+  background-color: brown;
+  color: white;
+  border: none;
+  opacity: 0.8;
+}
+
+.btn-delete:hover {
+  transition: 0.4s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+
 @media (max-width: 768px) {
   .category {
     padding: 2rem 5%;

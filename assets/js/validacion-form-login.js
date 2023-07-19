@@ -24,7 +24,7 @@ form.addEventListener('submit', (event)=> {
             return
         };
         
-        window.location.href = 'products.html';
+        window.location.href = 'get-products.html';
         form.reset();
     }
     

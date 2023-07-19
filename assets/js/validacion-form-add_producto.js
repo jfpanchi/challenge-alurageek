@@ -18,7 +18,7 @@ form.addEventListener('submit', (event)=> {
             'Producto creado',
             'success'
         )
-        form.reset();
+       
     }
     
 });

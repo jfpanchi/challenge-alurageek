@@ -1,0 +1,138 @@
+{
+  "producto": [
+    {
+      "imagen": "./assets/img/star-wars/unsplash_6FDXGY9J6y4.png",
+      "titulo": "Producto XYZ",
+      "precio": 60,
+      "categoria": "star-wars",
+      "id": "6FDXGY9J6y4"
+    },
+    {
+      "imagen": "./assets/img/star-wars/unsplash_epRFE_hBNjo.png",
+      "titulo": "Producto XYZ",
+      "precio": 60,
+      "categoria": "star-wars",
+      "id": "epRFE_hBNjo"
+    },
+    {
+      "imagen": "./assets/img/star-wars/unsplash_KeGToDVN0l4.png",
+      "titulo": "Producto XYZ",
+      "precio": 60,
+      "categoria": "star-wars",
+      "id": "KeGToDVN0l4"
+    },
+    {
+      "imagen": "./assets/img/star-wars/unsplash_4OHkK555s1A.png",
+      "titulo": "Producto XYZ",
+      "precio": 60,
+      "categoria": "star-wars",
+      "id": "4OHkK555s1A"
+    },
+    {
+      "imagen": "./assets/img/star-wars/unsplash_R8L1l9RN198.png",
+      "titulo": "Producto XYZ",
+      "precio": 60,
+      "categoria": "star-wars",
+      "id": "R8L1l9RN198"
+    },
+    {
+      "imagen": "./assets/img/star-wars/unsplash_1VV1MRafd7A.png",
+      "titulo": "Producto XYZ",
+      "precio": 60,
+      "categoria": "star-wars",
+      "id": "1VV1MRafd7A"
+    },
+    {
+      "imagen": "./assets/img/consolas/unsplash_0POwK6iAiRQ.png",
+      "titulo": "Control XYZ",
+      "precio": 60,
+      "categoria": "consolas",
+      "id": "0POwK6iAiRQ"
+    },
+    {
+      "imagen": "./assets/img/consolas/unsplash_caNzzoxls8Q.png",
+      "titulo": "Control y consola XYZ",
+      "precio": 60,
+      "categoria": "consolas",
+      "id": "caNzzoxls8Q"
+    },
+    {
+      "imagen": "./assets/img/consolas/unsplash_ZV7lnfyQLmA.png",
+      "titulo": "Consola XYZ",
+      "precio": 60,
+      "categoria": "consolas",
+      "id": "ZV7lnfyQLmA"
+    },
+    {
+      "imagen": "./assets/img/consolas/unsplash_wa5z9o9fgjw.png",
+      "titulo": "Control XYZ",
+      "precio": 60,
+      "categoria": "consolas",
+      "id": "wa5z9o9fgjw"
+    },
+    {
+      "imagen": "./assets/img/consolas/unsplash_Zjn4dT993-g.png",
+      "titulo": "Consola XYZ",
+      "precio": 60,
+      "categoria": "consolas",
+      "id": "Zjn4dT993-g"
+    },
+    {
+      "imagen": "./assets/img/consolas/unsplash_k-xYhI3-gJM.png",
+      "titulo": "Game Boy Color",
+      "precio": 60,
+      "categoria": "consolas",
+      "id": "k-xYhI3-gJM"
+    },
+    {
+      "imagen": "./assets/img/diversos/unsplash_fMP-oCze3AY.png",
+      "titulo": "Camisa Atari",
+      "precio": 60,
+      "categoria": "diversos",
+      "id": "fMP-oCze3AY"
+    },
+    {
+      "imagen": "./assets/img/diversos/unsplash_bUgaIaZysH0.png",
+      "titulo": "Camisa SNES",
+      "precio": 60,
+      "categoria": "diversos",
+      "id": "bUgaIaZysH0"
+    },
+    {
+      "imagen": "./assets/img/diversos/unsplash_sYVY_ZKwaxU.png",
+      "titulo": "Control y consola XYZ",
+      "precio": 60,
+      "categoria": "diversos",
+      "id": "sYVY_ZKwaxU"
+    },
+    {
+      "imagen": "./assets/img/diversos/unsplash_jMT6BrgBuXU.png",
+      "titulo": "Control y consola XYZ",
+      "precio": 60,
+      "categoria": "diversos",
+      "id": "jMT6BrgBuXU"
+    },
+    {
+      "imagen": "./assets/img/diversos/unsplash_MxVkWPiJALs.png",
+      "titulo": "Control y consola XYZ",
+      "precio": 60,
+      "categoria": "diversos",
+      "id": "MxVkWPiJALs"
+    },
+    {
+      "imagen": "./assets/img/diversos/unsplash_r27umXAelDc.png",
+      "titulo": "Producto XYZ",
+      "precio": 60,
+      "categoria": "diversos",
+      "id": "MxVkWPiJALs"
+    },
+    {
+      "imagen": "https://es.digitaltrends.com/wp-content/uploads/2023/03/mejores-consolas.jpeg",
+      "titulo": "Consola PS5",
+      "categoria": "consolas",
+      "precio": "200",
+      "descripcion": "Ga",
+      "id": "675fc5a6-102c-40f3-878e-810cf47b71cf"
+    }
+  ]
+}
