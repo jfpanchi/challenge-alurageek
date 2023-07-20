@@ -59,6 +59,7 @@ main {
   color: var(--color-blue-dark);
   font-size: 1rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .btn-delete {
@@ -69,9 +70,26 @@ main {
   color: white;
   border: none;
   opacity: 0.8;
+  font-size: medium;
 }
 
 .btn-delete:hover {
+  transition: 0.4s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: var(--color-blue-dark);
+  color: white;
+  padding: 0.2rem;
+  font-weight: 700;
+  border: none;
+  font-size: medium;
+  opacity: 0.8;
+}
+
+.btn-edit:hover {
   transition: 0.4s;
   opacity: 1;
   cursor: pointer;

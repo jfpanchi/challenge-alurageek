@@ -24,7 +24,7 @@
     <header>
         <nav class="nav">
             <div class="nav__contain">
-                <div class="logo"></div>
+                <a class="logo" href="index.html"></a>
                 <div class="search">
                     <input type="text" class="search__input" placeholder="¿Qué deseas buscar?">
                     <div class="search__icon"></div>
@@ -40,12 +40,12 @@
     <main>
         <div class="product-card">
             <figure class="product-card__photo">
-                <img src="./assets/img/star-wars/unsplash_6FDXGY9J6y4.png" alt="Producto">
+                <img src="" alt="Producto" id="image">
             </figure>
             <div class="product-card__info">
-                <h1 class="product-card__title">Producto XYZ</h1>
-                <h2 class="product-card__price">$ 60,00</h2>
-                <p class="product-card__description">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</p>
+                <h1 class="product-card__title" id="title"></h1>
+                <h2 class="product-card__price" id="price">$ </h2>
+                <p class="product-card__description" id="description"></p>
             </div>
         </div>
 
@@ -58,42 +58,42 @@
                     <img class="item__img" src="./assets/img/star-wars/unsplash_6FDXGY9J6y4.png" alt="">
                     <h3 class="item__title">Producto XYZ</h3>
                     <p class="item__price">$ 60,00</p>
-                    <a classs="item__link" href="#">Ver Producto</a>
+                    <a classs="item__link" href="product.html?id=6FDXGY9J6y4">Ver Producto</a>
                 </div>
 
                 <div class="products__item">
                     <img class="item__img" src="./assets/img/star-wars/unsplash_epRFE_hBNjo.png" alt="">
                     <h3 class="item__title">Producto XYZ</h3>
                     <p class="item__price">$ 60,00</p>
-                    <a classs="item__link" href="#">Ver Producto</a>
+                    <a classs="item__link" href="product.html?id=epRFE_hBNjo">Ver Producto</a>
                 </div>
 
                 <div class="products__item">
                     <img class="item__img" src="./assets/img/star-wars/unsplash_KeGToDVN0l4.png" alt="">
                     <h3 class="item__title">Producto XYZ</h3>
                     <p class="item__price">$ 60,00</p>
-                    <a classs="item__link" href="#">Ver Producto</a>
+                    <a classs="item__link" href="product.html?id=KeGToDVN0l4">Ver Producto</a>
                 </div>
 
                 <div class="products__item">
                     <img class="item__img" src="./assets/img/star-wars/unsplash_4OHkK555s1A.png" alt="">
                     <h3 class="item__title">Producto XYZ</h3>
                     <p class="item__price">$ 60,00</p>
-                    <a classs="item__link" href="#">Ver Producto</a>
+                    <a classs="item__link" href="product.html?id=4OHkK555s1A">Ver Producto</a>
                 </div>
 
                 <div class="products__item">
                     <img class="item__img" src="./assets/img/star-wars/unsplash_R8L1l9RN198.png" alt="">
                     <h3 class="item__title">Producto XYZ</h3>
                     <p class="item__price">$ 60,00</p>
-                    <a classs="item__link" href="#">Ver Producto</a>
+                    <a classs="item__link" href="product.html?id=R8L1l9RN198">Ver Producto</a>
                 </div>
 
                 <div class="products__item">
                     <img class="item__img" src="./assets/img/star-wars/unsplash_1VV1MRafd7A.png" alt="">
                     <h3 class="item__title">Producto XYZ</h3>
                     <p class="item__price">$ 60,00</p>
-                    <a classs="item__link" href="#">Ver Producto</a>
+                    <a classs="item__link" href="product.html?id=1VV1MRafd7A">Ver Producto</a>
                 </div>
 
             </div>
@@ -137,7 +137,7 @@
     </footer>
 
     <script src="./assets/js/validacion-form-contact.js"></script>
-
+    <script type="module" src="./controllers/get_product-controller.js"></script>
 </body>
 
 </html>

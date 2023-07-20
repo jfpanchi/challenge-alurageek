@@ -8,7 +8,7 @@ const CreateItemTable = (imagen,titulo, precio, id) => {
         <img class="item__img" src="${imagen}" alt="">
         <h3 class="item__title">${titulo}</h3>
         <p class="item__price">$ ${precio}</p>
-        <a classs="item__link" href="#">Ver Producto</a>
+        <a classs="item__link" href="product.html?id=${id}">Ver Producto</a>
     `;
     linea.innerHTML = contenido;
     return linea;

@@ -13,12 +13,13 @@ form.addEventListener('submit', (event)=> {
     
     if (form.checkValidity()) {
         
-        Swal.fire(
-            'Guardado',
-            'Producto creado',
-            'success'
-        )
-       
+        Swal.fire({
+            title: 'Guardado',
+            text: 'Producto Listo',
+            icon: 'success',
+            showConfirmButton: false, 
+            timer: 2000 
+          });
     }
     
 });
