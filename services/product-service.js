@@ -1,9 +1,9 @@
 const toListProducts = () => {
-  return fetch('http://localhost:3000/producto').then( (res)=> res.json())
+  return fetch('https://alurageek-backend-jsonserver.vercel.app/producto').then( (res)=> res.json())
 };
 
 const createProduct = (imagen, nombre, categoria, precio, descripcion) => {
-   return fetch('http://localhost:3000/producto',{
+   return fetch('https://alurageek-backend-jsonserver.vercel.app/producto',{
         method: 'POST',
         headers: {
             "Content-Type": "application/json"
@@ -13,19 +13,20 @@ const createProduct = (imagen, nombre, categoria, precio, descripcion) => {
 }
 
 const deleteProduct = (id) => {
-    return fetch(`http://localhost:3000/producto/${id}`,{
-        method: 'DELETE'
-    })
+    return fetch(`https://alurageek-backend-jsonserver.vercel.app/producto/${id}`,{
+        method: 'DELETE',
+    }).then((res) => res.json())
+    .catch((error) => console.log(error));
 }
 
 const detailProduct = (id) => {
-    return fetch(`http://localhost:3000/producto/${id}`).then(resp => 
+    return fetch(`https://alurageek-backend-jsonserver.vercel.app/producto/${id}`).then(resp => 
         resp.json()
     ) 
 }
 
 const updateProduct = (imagen, nombre, categoria, precio, descripcion, id) => {
-    return fetch(`http://localhost:3000/producto/${id}`,{
+    return fetch(`https://alurageek-backend-jsonserver.vercel.app/producto/${id}`,{
         method: "PUT",
         headers: {
             "Content-Type": "application/json"

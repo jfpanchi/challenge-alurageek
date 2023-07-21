@@ -16,10 +16,10 @@ const CreateItemTable = (imagen,titulo, precio, id) => {
     const btn = linea.querySelector("button");
     btn.addEventListener("click", () => {
       const id = btn.id;
-      productServices
-        .deleteProduct(id)
-        .then((res) => {})
-        .catch((err) => console.log(err));
+      productServices.deleteProduct(id).then(() => {
+        window.location.href = "get-products.html";
+      });;
+      
     });
     return linea;
   };
