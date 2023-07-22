@@ -37,6 +37,8 @@ main {
 }
 
 .products__item {
+  display: flex;
+  flex-direction: column;
   width: 15%;
   margin: 1rem 0;
 }
@@ -63,10 +65,9 @@ main {
 }
 
 .btn-delete {
-  width: fit-content;
   font-weight: 700;
   padding: 0.2rem;
-  background-color: brown;
+  background-color: #d33;
   color: white;
   border: none;
   opacity: 0.8;
@@ -80,7 +81,9 @@ main {
 }
 
 .btn-edit {
-  background-color: var(--color-blue-dark);
+  text-align: center;
+  padding: 0.2rem;
+  background-color: #3085d6;
   color: white;
   padding: 0.2rem;
   font-weight: 700;

@@ -15,10 +15,31 @@ const CreateItemTable = (imagen,titulo, precio, id) => {
     linea.innerHTML = contenido;
     const btn = linea.querySelector("button");
     btn.addEventListener("click", () => {
-      const id = btn.id;
-      productServices.deleteProduct(id).then(() => {
-        window.location.href = "get-products.html";
-      });;
+      Swal.fire({
+        title: '¡Atención!',
+        text: "¿Estás seguro de que deseas eliminar este producto?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Eliminar',
+        cancelButtonText: 'Cancelar'
+        
+      }).then((result) => {
+        if (result.isConfirmed) {
+          const id = btn.id;
+          productServices.deleteProduct(id).then(() => {
+            window.location.href = "get-products.html";
+          });;
+          Swal.fire({
+            title: 'Eliminado',
+            text: 'El producto fue eliminado',
+            icon: 'success',
+            showConfirmButton: false, 
+            timer: 2000 
+          })
+        }
+      })
       
     });
     return linea;
