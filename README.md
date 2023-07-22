@@ -19,3 +19,6 @@ La empresa AluraGeek necesita llegar a más clientes y aumentar su nivel de vent
 - Menú de administrador para que puedan agregar, editar, buscar o eliminar productos de la tienda.
 
 **Es muy importante que el sitio sea adaptable**  para que los clientes puedan comprar fácilmente a través de dispositivos móviles.
+
+## DEMO 
+https://jfpanchi-challenge-alurageek.netlify.app/
